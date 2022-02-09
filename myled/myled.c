@@ -1,4 +1,8 @@
 #include<linux/module.h>
+MODULE_AUTHOR("Atsushi Yamaguchi");
+MODULE_DESCRIPTION("driver for LED control");
+MODULE_LICENSE("GPL");
+MODULE_VERSION("0.0.1");
 
 static int __init init_mod(void){//カーネルモジュールの初期化
     printk(KERN_INFO "%s is loaded.\n",__FILE__);
